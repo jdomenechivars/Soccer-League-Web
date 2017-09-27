@@ -1,0 +1,494 @@
+* {
+  font-family: "Roboto", Helvetica, Arial, sans-serifs;
+  font-size: 16px;
+/*  border: 1px solid black;*/
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-color: #0E3F4B;
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  order: -1;
+  width: 205px;
+  min-width: 150px;
+  padding: 5px;
+  margin-left: -1px;
+}
+
+#logo {
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  background-color: #0E3F4B;
+  /*  background-color: #031F38;*/
+}
+
+.webtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 850px;
+  margin-right: -2px;
+  background-color: #0E3F4B;
+  /*background-color: #031F38;*/
+  /*background-color: #47535F;*/
+}
+
+h1,
+h6 {
+  color: white;
+  font-family: "Walter Turncoat";
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+main {
+  display: flex;
+  position: relative;
+  top: 88px;
+  left: 194px;
+  min-width: 900px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-image: url(bluepllayers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Aside is only for the backgroun of showdata page*/
+aside{
+  display: flex;
+  position: relative;
+  top: 88px;
+  left: 194px;
+  min-width: 900px;
+  margin-left: -2px;
+  margin-right: -2px;
+  background-color:rgba(14, 63, 75, 0.76);
+}
+
+nav {
+  position: fixed;
+  top: 88px;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  order: 1;
+  margin-left: -1px;
+  width: 194px;
+  min-width: 150px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  background-color: #0E3F4B;
+  border-right: 2px solid chartreuse;
+  /* background-color: #485B3F;*/
+  /* background: linear-gradient(to right bottom, #485B3F, #253426);*/
+}
+
+h5 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  min-width: 850px;
+  min-height: 700px;
+}
+
+h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  min-width: 850px;
+  max-height: 50px;
+  color: black;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 2em;
+  /*  background: linear-gradient(to right bottom, #A8BF95, #253426);*/
+}
+
+article {
+  display: flex;
+  order: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 820px;
+  min-width: 820px;
+  margin: 50px auto;
+  padding: 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.36);
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+h3,
+p {
+  padding: 15px;
+  line-height: 150%;
+  color: black;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+.icon{
+  font-size: large;
+  vertical-align: middle;
+}
+
+/*The links of navbar*/
+a.menu:link,
+a.menu:visited {
+  color: white;
+  text-decoration: none
+}
+
+a.menu:hover {
+  text-decoration: underline;
+  color: #AAFF49;
+}
+
+a.contact:link,
+a.contact:visited {
+  font-weight: bold;
+  color: #0E3F4B;
+  text-decoration: none
+}
+
+a.contact:hover {
+  text-decoration: underline;
+  text-decoration-color: #AAFF49;
+  text-decoration-skip: ink;
+}
+
+
+/*List properties*/
+.listtitle {
+  align-self: flex-start;
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+span {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+ul {
+  text-align: justify;
+  list-style: square;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ol {
+  text-align: justify;
+  list-style: decimal;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.sublisto {
+  text-align: justify;
+  list-style: lower-alpha;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.sublistu2 {
+  text-align: justify;
+  list-style: circle;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+li,
+.lisublist,
+.lisublist2 {
+  font-size: 16px;
+  line-height: 150%;
+  padding: 5px;
+}
+
+.subtitletable {
+  align-self: flex-start;
+  text-align: left;
+  text-decoration: underline;
+  font-style: italic;
+  padding: 5px;
+}
+
+/*Table properties*/
+table {
+  /*border: 1px solid black;*/
+  max-width: 800px;
+  min-width: 800px;
+}
+
+th,
+td {
+  /*border: 1px solid black;*/
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.month tbody tr td:first-child {
+  text-align: center;
+}
+
+thead {
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.month thead tr th:first-child {
+  text-align: center;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin: 25px 0px;
+}
+
+.month {
+  align-self: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.undertable {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.contact2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.location tbody tr td{
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
+
+.map{
+  text-align: center;
+}
+
+/*Form properties */
+fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+  padding: 14px 20px;
+  margin: 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+legend {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, .9)
+}
+
+label {
+  color: black;
+  font-size: 16px;
+  margin: 5px;
+}
+
+input {
+  width: 95%;
+  margin: 5px;
+  padding: 2px 5px;
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+
+input[name="gender"],
+input[name="play-position"],
+input[name="school-grade"],
+input[name="play-position"],
+input[name="uniform"] {
+  width: auto;
+}
+
+.playerdata {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.playerinfo {
+  width: 48%;
+  margin: 5px;
+}
+
+#gender {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.gender1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+  margin: 5px 20px;
+}
+
+.schoolinfo {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.schoolinfo1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+}
+
+.schoolinfo2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5px 20px;
+}
+
+.schoolinfo21 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5px;
+}
+
+select {
+  margin: 5px 20px;
+  width: 90%;
+  font-size: 14px;
+}
+
+.playinfo {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.playinfo1{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 5px;
+}
+
+.playinfo2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.permision {
+  font-size: 12px;
+}
+
+#permision {
+  padding: 5px;
+  text-decoration: underline;
+}
+
+#signature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sendbutton{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+}
+
+input[name="submit"] {
+  width: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+}

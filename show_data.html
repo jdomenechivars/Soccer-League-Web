@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+  <title>Feedback Sent</title>
+   <link rel="icon" href="styles/nysl_logo.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/nysl_3.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="webtitle">
+      <h1></h1>
+      <h6></h6>
+    </div>
+    <div class="logo">
+      <img id="logo" src="styles/logo.png" alt="logo">
+    </div>
+  </header>
+  <aside>
+    <nav>
+      <h5>
+        <a href="registration.html" class="menu">Back to Registration Form</a>
+      </h5>
+    </nav>
+    <section>
+      <h2>The following information has been sent as your feedback:</h2>
+      <article>
+        <table>
+          <tr>
+            <th>Form Field</th>
+            <th>Field Value</th>
+          </tr>
+
+          <script language="javascript">
+            var args = location.search.substr(1).split('&');
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split('=');
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                  value = "null"
+                } else {
+                  value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                }
+
+                document.writeln('<tr><td align="center">' + field + '</td>');
+                document.writeln('<td align="center">' + value + '</td></tr>');
+              }
+            }
+          </script>
+
+          <noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+        </table>
+      </article>
+    </section>
+  </aside>
+</body>
+</html>
